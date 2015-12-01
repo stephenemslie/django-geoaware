@@ -1,7 +1,7 @@
 from django.conf import settings
-from geo import get_geo_info
-from geo import get_ip_address
-import defaults
+from .geo import get_geo_info
+from .geo import get_ip_address
+from . import defaults
 
 class GeoAwareSessionMiddleware(object):
     """ Saves geo info in session if GeoIP is configured for city or country.

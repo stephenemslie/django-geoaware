@@ -5,7 +5,7 @@ try:
     from django.contrib.gis.geoip import GeoIP
 except ImportError:
     from django.contrib.gis.utils import GeoIP
-import defaults
+from . import defaults
 
 # by no means this is a perfect IP regex
 IP_RE = re.compile('\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')

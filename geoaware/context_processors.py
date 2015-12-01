@@ -1,6 +1,6 @@
 from django.conf import settings
-from geo import get_geo_info
-from geo import get_ip_address
+from .geo import get_geo_info
+from .geo import get_ip_address
 
 def geoaware(request):
     """ Bring GeoInfo into the context if GeoIP is configured for city or country.

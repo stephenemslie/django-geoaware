@@ -1,7 +1,7 @@
 
 __version__ = '0.5.0'
 
-import defaults
+from . import defaults
 
 GEOIP_INCLUDE_TEMPLATE_TAGS = getattr(defaults, 'GEOIP_INCLUDE_TEMPLATE_TAGS')
 if GEOIP_INCLUDE_TEMPLATE_TAGS:
